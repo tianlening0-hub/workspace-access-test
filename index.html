@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>工作台访问测试</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#17191d;color:#eee;font-family:system-ui,-apple-system,sans-serif;min-height:100svh;display:grid;place-items:center;padding:24px}main{width:100%;max-width:500px;border:1px solid #393e47;border-radius:20px;padding:32px;background:#23262c}.badge{color:#83c9a4;font-size:15px}h1{font-size:30px;margin:20px 0}p{color:#bec4ce;line-height:1.8}button{font:inherit;border:0;border-radius:12px;background:#719bff;color:#111;padding:14px 24px;min-height:48px;width:100%;margin-top:16px}#status{min-height:28px;color:#83c9a4}.small{font-size:13px;margin-top:26px}
+</style>
+<main>
+<div class="badge">独立网址 · 手机访问测试</div>
+<h1>页面已成功打开</h1>
+<p>如果你能看到这句话，说明手机能够访问这个新网址。</p>
+<button id="test" type="button">点一下测试</button>
+<p id="status" aria-live="polite">等待点击</p>
+<p class="small">这是测试页面，不含私人聊天、笔记或密码。还没有迁移工作台。</p>
+</main>
+<script>document.getElementById('test').addEventListener('click',function(){document.getElementById('status').textContent='点击成功，页面操作正常。';});</script>
+</html>
